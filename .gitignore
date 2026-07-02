@@ -30,7 +30,7 @@ train_log.txt
 .ipynb_checkpoints/
 
 # checkpoint 权重（仅保留最终权重）
-checkpoint/
+checkpoint/*
 !checkpoint/ssd_checkpoint_epoch_175.pth
 
 # 数据集目录（保留目录结构，忽略实际文件）
