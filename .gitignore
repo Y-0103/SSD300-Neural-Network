@@ -1,0 +1,48 @@
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 训练日志
+train_log.txt
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# checkpoint 权重（仅保留最终权重）
+checkpoint/
+!checkpoint/ssd_checkpoint_epoch_175.pth
+
+# 数据集目录（保留目录结构，忽略实际文件）
+VOC2007+2012训练集/Annotations/*
+!VOC2007+2012训练集/Annotations/.gitkeep
+VOC2007+2012训练集/JPEGImages/*
+!VOC2007+2012训练集/JPEGImages/.gitkeep
+VOC2007测试集/Annotations/*
+!VOC2007测试集/Annotations/.gitkeep
+VOC2007测试集/JPEGImages/*
+!VOC2007测试集/JPEGImages/.gitkeep
+
+# 标注缓存文件（运行时自动生成）
+train_annotations.pt
+test_annotations.pt
